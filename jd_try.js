@@ -5,6 +5,10 @@
 变量:
 JD_TRY_MIN_PRICE 最小价格单位
 
+
+京东价格保护：脚本更新地址 https://raw.githubusercontent.com/ZCY01/daily_scripts/main/jd/jd_try.js
+脚本兼容: QuantumultX, Node.js
+
 ⚠️ 非常耗时的脚本。最多可能执行半小时！
 每天最多关注300个商店，但用户商店关注上限为500个。
 请配合取关脚本试用，使用 jd_unsubscribe.js 提前取关至少250个商店确保京东试用脚本正常运行。
@@ -14,7 +18,7 @@ JD_TRY_MIN_PRICE 最小价格单位
 5 10 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unsubscribe.js, tag=取关京东店铺商品, enabled=true
 
 # 京东价格保护
-30 10 * * * https://raw.githubusercontent.com/xigua0123/my_test_scripts/master/jd_try.js, tag=京东试用, img-url=https://raw.githubusercontent.com/ZCY01/img/master/jdtryv1.png, enabled=true
+30 10 * * * https://raw.githubusercontent.com/ZCY01/daily_scripts/main/jd/jd_try.js, tag=京东试用, img-url=https://raw.githubusercontent.com/ZCY01/img/master/jdtryv1.png, enabled=true
  */
 const $ = new Env("京东试用");
 let cookiesArr = [],
@@ -609,7 +613,7 @@ function TotalBean() {
             : require("./USER_AGENTS").USER_AGENT
           : $.getdata("JDUA")
           ? $.getdata("JDUA")
-          : "jdapp;iPhone;10.0.8;14.4.2;${randomString()};network/wifi;ADID/3F74A88A-71D3-404B-BBDF-8C0575E680EC;model/iPhone10,2;addressid/4091160336;appBuild/167741;jdSupportDarkMode/0;Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1",
+          : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0",
       },
       timeout: 10000,
     };
