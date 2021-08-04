@@ -15,7 +15,7 @@ update 2021/6/11
 5,50 3 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unsubscribe.js, tag=取关京东店铺商品, enabled=true
 
 # 京东试用
-30 10 * * * https://raw.githubusercontent.com/xigua0123/my_test_scripts/master/try.js, tag=京东试用, img-url=https://raw.githubusercontent.com/ZCY01/img/master/jdtryv1.png, enabled=true
+10 7 * * * https://raw.githubusercontent.com/xigua0123/my_test_scripts/master/try.js, tag=京东试用, img-url=https://raw.githubusercontent.com/ZCY01/img/master/jdtryv1.png, enabled=true
  */
 const $ = new Env('京东试用')
 
