@@ -394,7 +394,7 @@ async function getSuccessList() {
 			headers: {
 				'Host': 'try.jd.com',
 				'Connection': 'keep-alive',
-				'UserAgent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+				'UserAgent': 'jdapp;iPhone;10.0.8;14.4.2;${randomString()};network/wifi;ADID/3F74A88A-71D3-404B-BBDF-8C0575E680EC;model/iPhone10,2;addressid/4091160336;appBuild/167741;jdSupportDarkMode/0;Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1',
 				'Accept': '*/*',
 				'Referer': 'https://try.m.jd.com/',
 				'Accept-Encoding': 'gzip, deflate, br',
@@ -446,7 +446,7 @@ function taskurl(url, goodId) {
 			'Cookie': $.cookie,
 			'Connection': 'keep-alive',
 			'Accept': '*/*',
-			'UserAgent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+			'UserAgent': 'jdapp;iPhone;10.0.8;14.4.2;${randomString()};network/wifi;ADID/3F74A88A-71D3-404B-BBDF-8C0575E680EC;model/iPhone10,2;addressid/4091160336;appBuild/167741;jdSupportDarkMode/0;Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1',
 			'Accept-Language': 'zh-cn',
 			'Referer': goodId ? `https://try.m.jd.com/activity/?id=${goodId}` : undefined
 		},
