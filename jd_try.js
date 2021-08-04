@@ -14,7 +14,7 @@ JD_TRY_MIN_PRICE 最小价格单位
 5 10 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unsubscribe.js, tag=取关京东店铺商品, enabled=true
 
 # 京东价格保护
-30 10 * * * https://raw.githubusercontent.com/ZCY01/daily_scripts/main/jd/jd_try.js, tag=京东试用, img-url=https://raw.githubusercontent.com/ZCY01/img/master/jdtryv1.png, enabled=true
+30 10 * * * https://raw.githubusercontent.com/xigua0123/my_test_scripts/master/jd_try.js, tag=京东试用, img-url=https://raw.githubusercontent.com/ZCY01/img/master/jdtryv1.png, enabled=true
  */
 const $ = new Env("京东试用");
 let cookiesArr = [],
