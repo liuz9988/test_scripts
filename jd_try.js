@@ -1,6 +1,6 @@
 /*
 
-30 10 * * * jd_try.js
+30 6 * * * jd_try.js
 
 */
 const $ = new Env('京东试用')
